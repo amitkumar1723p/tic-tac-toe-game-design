@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+   
+}
+
+.rese-line {
+    display: none;
+}
+
+.rese-line2 {
+    display: none;
+}
+
+body {
+    /* backdrop-filter: 1; */
+    background-color: #013039;
+    
+}
+ 
+
+
+/* css for game  */
+.bigcontainer{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.container {
+
+    margin-top: 32px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.gamecontaier {
+    margin:auto;
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+
+
+
+}
+
+.box {
+    border: 2px solid #306172;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px 0px #50747a;
+    border-radius: 7%;
+    color: red;
+}
+
+
+ 
+
+.headinone {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 3.3rem;
+    color: white;
+    text-shadow: 3px 0px 3px #00a4dd;
+}
+
+ 
+
+.box:hover {
+    background: #30617294;
+}
+
+.bl {
+    border-left: none;
+}
+
+.br {
+    border-right: none;
+}
+
+.bb {
+    border-bottom: none;
+
+}
+
+.bt {
+    border-top: none;
+}
+
+.box svg {
+    
+    fill: #94e7ff;;
+    width: 100%;
+}
+.box svg path{
+    background-color: red;
+}
+
+
+
+ 
+
+.line {
+    width: 730px;
+    height: 4px;
+    padding: 2px;
+    /* background-color: rgb(17, 255, 0); */
+    background-color: gold;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    transform: rotate(45deg);
+    border-radius: 100px;
+    box-shadow: 0px 0px 6px #ffd700;
+
+}
+ 
+
+
+@media only screen and (max-width:600px) {
+
+    
+    .line {
+        
+        width: 460px;
+    } 
+     .bigcontainer{
+        margin-top: 10%;
+     }
+
+    .headinone {
+        font-size: 2.8rem;
+    }
+    .container{
+        margin-top: 55px;
+    }
+
+
+    .gamecontaier {
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(3, 120px);
+    }
+
+
+ 
+   
+}
+
+@media only screen and (max-width:410px) {
+    
+ 
+
+ 
+
+ 
+    .line {
+        
+        width: 113%;
+    }
+    .headinone {
+        font-size: 10.6vw;
+    }
+  
+ 
+
+    .gamecontaier {
+        grid-template-columns: repeat(3, 29vw);
+        grid-template-rows: repeat(3, 29vw);
+    }
+
+ 
+}
+@media only screen and (max-width:210px) {
+    .ul{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+          }
+           
+          
+          .navigation {
+           
+              padding: 7px 3px;
+            }
+        }
